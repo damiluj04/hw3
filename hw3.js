@@ -332,6 +332,8 @@ function validatePassword()
     errorContainer.innerHTML = errorMessage
     .map((message) => `<span>${message}</span><br/>`)
     .join("");
+
+    return errorMessage.length === 0;
 }
 
 function validateConPassword()
