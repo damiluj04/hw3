@@ -376,7 +376,7 @@ function reviewInput()
             case "checkbox":
                 if (el.checked)
                 {
-                    formoutput += "<tr> <td align= 'right'>" + formcontent.elements[i].name + "</td>";
+                    formoutput += "<tr> <td align= 'right'>" + name + "</td>";
                     formoutput += "<td class= 'outputdata'>&#x2713; </td></tr>";
                 }
                 break;
@@ -384,8 +384,8 @@ function reviewInput()
             case "radio":
                 if (formcontent.elements[i].checked)
                 {
-                    formoutput += "<tr> <td align = 'right'>" + formcontent.elements[i].name + "</td>";
-                    formoutput += "<td class = 'outputdata'>" + formcontent.elements[i].value + "</td></tr>";
+                    formoutput += "<tr> <td align = 'right'>" + name + "</td>";
+                    formoutput += "<td class = 'outputdata'>" + value + "</td></tr>";
                 }
                 break;
 
@@ -394,8 +394,8 @@ function reviewInput()
             case "reset":
                 break;
             default:
-                formoutput += "<tr> <td align= 'right'>" + formcontent.elements[i].name + "</td>";
-                formoutput += "<td class= 'outputdata'>" + formcontent.elements[i].value + "</td></tr>";
+                formoutput += "<tr> <td align= 'right'>" + name + "</td>";
+                formoutput += "<td class= 'outputdata'>" + value + "</td></tr>";
         }
     }
 
