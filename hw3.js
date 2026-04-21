@@ -376,13 +376,13 @@ function reviewInput()
             case "checkbox":
                 if (el.checked)
                 {
-                    formoutput += "<tr> <td align= 'right'>" + name + "</td>";
+                    formoutput += "<tr><td align= 'right'>" + name + "</td>";
                     formoutput += "<td class= 'outputdata'>&#x2713; </td></tr>";
                 }
                 break;
                 
             case "radio":
-                if (formcontent.elements[i].checked)
+                if (el.checked)
                 {
                     formoutput += "<tr> <td align = 'right'>" + name + "</td>";
                     formoutput += "<td class = 'outputdata'>" + value + "</td></tr>";
