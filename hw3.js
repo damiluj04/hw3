@@ -382,7 +382,7 @@ function reviewInput()
                 break;
                 
             case "radio":
-                if (el.checked)
+                if (formcontent.elements[i].checked)
                 {
                     formoutput += "<tr> <td align = 'right'>" + name + "</td>";
                     formoutput += "<td class = 'outputdata'>" + value + "</td></tr>";
@@ -393,18 +393,15 @@ function reviewInput()
             case "submit":
             case "reset":
                 break;
-            
             default:
-                if (value !== "")
-                {
-                    formoutput += "<tr> <td align= 'right'>" + name + "</td>";
-                    formoutput += "<td class= 'outputdata'>" + value + "</td></tr>";
-                }
+                formoutput += "<tr> <td align= 'right'>" + name + "</td>";
+                formoutput += "<td class= 'outputdata'>" + value + "</td></tr>";
         }
     }
 
+    if (formoutput.length > 0)
     {
-        formoutput += "</table>";
+        formoutput = formoutput + "</table>";
         document.getElementById("showInput").innerHTML = formoutput;
     }
 }
