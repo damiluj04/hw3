@@ -113,16 +113,19 @@ function validateDob()
 {
     dob = document.getElementById("dob");
     let date = new Date(dob.value);
-    let maxDate = new Date().setFullYear( newDate().getFullYear() - 120);
+    let today = new Date();
+    
+    let maxDate = new Date();
+    maxDate.setFullYear(today.getFullYear() - 120);
 
-    if (date > new Date())
+    if (date > today)
     {
         document.getElementById("dob_error").innerHTML = "Date of Birth cannot be in the future.";
         dob.value = "";
         return false;
     }
         
-    else if (date < new Date(maxDate))
+    else if (date < maxDate)
     {
         document.getElementById("dob_error").innerHTML = "Date of Birth cannot be more than 120 years ago.";
         dob.value = "";
