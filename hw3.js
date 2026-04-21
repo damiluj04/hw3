@@ -406,7 +406,7 @@ function removeReview()
     document.getElementById("showInput").innerHTML = "";
 }
 
-function alertCaptain()
+function showAlert()
 {
     var alertBox = document.getElementById("alert-box");
     var closeAlert = document.getElementById("close-alert");
@@ -494,6 +494,6 @@ function validateEverything()
 
     else
     {
-        alertCaptain();
+        showAlert();
     }
 }
