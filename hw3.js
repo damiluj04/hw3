@@ -3,7 +3,7 @@ let text = d.toLocaleDateString();
 document.getElementById("today").innerHTML = text;
 
 let slider = document.getElementById("range");
-    let output = document.getElementById("range_slider");
+    let output = document.getElementById("range-slider");
     output.innerHTML = slider.value;
 
     slider.oninput = function() {output.innerHTML = this.value;};
