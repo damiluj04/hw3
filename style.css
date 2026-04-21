@@ -148,7 +148,7 @@ td.output
 td.output
     {
         width: 500px;
-        background-color: rgba(140, 73, 198, 0.753);
+        background-color: rgba(209, 171, 243, 0.753);
         padding: 10px;
         border-spacing: 2px;
     }
@@ -280,12 +280,12 @@ td.outputdata
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(124, 43, 194, 0.753);
+    background-color: transparent;
 }
 
 #alert-content
 {
-    background-color: rgba(124, 43, 194, 0.753);
+    background-color: rgba(188, 113, 253, 0.753);
     border-radius: 5px;
     width: 350px;
     height: 200px;
