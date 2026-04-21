@@ -401,7 +401,7 @@ function reviewInput()
 
     if (formoutput.length > 0)
     {
-        formoutput = formoutput + "</table>";
+        formoutput += "</table>";
         document.getElementById("showInput").innerHTML = formoutput;
     }
 }
