@@ -400,7 +400,7 @@ function reviewInput()
     }
 
     {
-        formoutput = formoutput + "</table>";
+        formoutput += "</table>";
         document.getElementById("showInput").innerHTML = formoutput;
     }
 }
