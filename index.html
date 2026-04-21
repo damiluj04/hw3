@@ -44,7 +44,7 @@
 
 				<tr>
 					<td class="td1">
-						<label for="fname">Legal name:</label>
+						<label for="fname">First name:</label>
 					</td>
 					<td>
 						<input
@@ -62,12 +62,18 @@
 
 					</br>
 					<span class="error" id="fname_error"></span>	
+					</td>
 	
+					<td class="td1">
+						<label for="mini">Middle initial:</label>
+					</td>
+					<td>
 						<input
 						type="text"
 						name="mini"
 						id="mini"
 						maxlength="1"
+                        missingsize="1"
 						title="Letters only"
 						pattern="[a-zA-Z']{0,1}"
 						onblur="validateMini()"
@@ -76,7 +82,12 @@
 					
 					</br>
 					<span class="error" id="mini_error"></span>
-				
+					</td>
+
+					<td class="td1">
+						<label for="lname">Last name:</label>
+					</td>
+					<td>
 						<input
 						type="text"
 						name="lname"
@@ -89,7 +100,6 @@
 						onblur="validateLname()"
 						placeholder="Last Name"
 						/>
-				
 					</br>
 					<span class="error" id="lname_error"></span>
 					</td>
