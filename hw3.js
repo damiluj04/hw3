@@ -382,7 +382,7 @@ function reviewInput()
                 break;
                 
             case "radio":
-                if (formcontent.elements[i].checked)
+                if (ele.checked)
                 {
                     formoutput += "<tr> <td align = 'right'>" + name + "</td>";
                     formoutput += "<td class = 'outputdata'>" + value + "</td></tr>";
