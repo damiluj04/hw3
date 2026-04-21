@@ -280,7 +280,7 @@ td.outputdata
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: transparent;
+    background-color: rgba(209, 171, 243, 0.753);
 }
 
 #alert-content
@@ -308,7 +308,7 @@ td.outputdata
     background-color: rgba(209, 171, 243, 0.753);
     border-width: 1px;
     border-style: solid;
-    color: rgba(192, 144, 234, 0.805);
+    color: rgba(209, 171, 243, 0.753);
     border-color: rgba(209, 171, 243, 0.753);
     font-size: 14px;
     font-weight: bold;
