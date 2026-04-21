@@ -51,7 +51,7 @@ function validateFname()
 function validateMini()
 {
     Mini = document.getElementById("mini").value;
-    var namePattern = /^[A-Z]+$/;
+    var namePattern = /^[A-Z]?$/;
 
     mini = Mini.toUpperCase();
     document.getElementById("mini").value = mini;
