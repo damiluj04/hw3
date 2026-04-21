@@ -376,7 +376,7 @@ function reviewInput()
             case "checkbox":
                 if (el.checked)
                 {
-                    formoutput += "<tr><td align= 'right'>" + name + "</td>";
+                    formoutput += "<tr> <td align= 'right'>" + name + "</td>";
                     formoutput += "<td class= 'outputdata'>&#x2713; </td></tr>";
                 }
                 break;
