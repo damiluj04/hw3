@@ -364,17 +364,17 @@ function reviewInput()
     
     for (i = 0; i < formcontent.length; i++)  
     {    
-        var el = formcontent.elements[i];
-        var datatype = el.type;
-        var name = el.name;
-        var value = el.value;
+        var ele = formcontent.elements[i];
+        var datatype = ele.type;
+        var name = ele.name;
+        var value = ele.value;
 
         if (!name) continue;
 
         switch (datatype)
         {
             case "checkbox":
-                if (el.checked)
+                if (ele.checked)
                 {
                     formoutput += "<tr> <td align= 'right'>" + name + "</td>";
                     formoutput += "<td class= 'outputdata'>&#x2713; </td></tr>";
